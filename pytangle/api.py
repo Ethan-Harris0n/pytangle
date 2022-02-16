@@ -242,6 +242,7 @@ class API:
             types=None,
             verifiedOnly=False,
             language=None,
+            pageAdminTopCountry=None
     ):
         """
         Args:
@@ -295,7 +296,7 @@ class API:
                     supply information about verified accounts.
         language : ( None, i.e. all languages ) Exceptions: Some languages require more than two characters: Chinese
                     (Simplified) is zh-CN and Chinese (Traditional) is zh-TW.
-
+        pageAdminTopCountry : (None, or any 2 letter iso country code) If set, will only search for country specified
         Returns:
         iterator of posts (dict)
 
@@ -342,6 +343,7 @@ class API:
             types=types,
             verifiedOnly=verifiedOnly,
             language=language,
+            pageAdminTopCountry=pageAdminTopCountry
         )
         yield from Paginator(endpoint=SearchEndpoint(args=remove_null_values_from_dict(params)))
 
