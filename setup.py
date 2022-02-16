@@ -11,8 +11,8 @@ setuptools.setup(
     description="A python wrapper for crowdtangle API endpoints",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/hide-ous/pytangle/",
-    download_url="https://github.com/hide-ous/pytangle/archive/v0.0.3.tar.gz",
+    url="https://github.com/Ethan-Harris0n/pytangle",
+    # download_url="https://github.com/hide-ous/pytangle/archive/v0.0.3.tar.gz",
     keywords=['crowdtangle', 'api', 'wrapper'],
     packages=setuptools.find_packages(),
     install_requires=[
